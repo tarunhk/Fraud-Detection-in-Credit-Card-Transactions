@@ -54,13 +54,13 @@ Step 1: Install dependencies
 pip install -r requirements.txt  
 
 Step 2: Train the model  
-python src/train.py  
+python3 src/train.py  
 
 Step 3: Evaluate the model  
-python src/evaluate.py  
+python3 src/evaluate.py  
 
 Step 4: Generate explainability insights  
-python src/explain.py  
+python3 src/explain.py  
 
 Step 5: Launch the application  
 streamlit run app/app.py  
