@@ -1,10 +1,29 @@
-# 💳 Credit Card Fraud Detection System (End-to-End Machine Learning with Explainable AI)
+# 💳 Credit Card Fraud Detection System
 
 ## 📌 Project Description
-The Credit Card Fraud Detection System is a production-style, end-to-end Machine Learning project designed to detect fraudulent financial transactions in highly imbalanced datasets. The system integrates supervised learning (XGBoost) with anomaly detection techniques (Isolation Forest) to improve detection accuracy and robustness. To enhance transparency and trust, Explainable AI (SHAP) is incorporated to interpret model predictions at both global and local levels. The entire pipeline is deployed using Streamlit, enabling real-time predictions and interactive visualization.
+The **Credit Card Fraud Detection System** is an end-to-end machine learning application designed to identify fraudulent transactions from financial data.
+
+This system uses **XGBoost for classification**, **Isolation Forest for anomaly detection**, and **SHAP for explainable AI**. It also includes an interactive **Streamlit web application** for real-time predictions and visualization.
+
+The project demonstrates the use of:
+- Machine Learning Models
+- Data Preprocessing
+- Imbalanced Data Handling
+- Model Evaluation Metrics
+- Explainable AI (SHAP)
+- Web Application Development
+
+---
 
 ## 🎯 Objective
-To design and implement a scalable fraud detection pipeline that accurately identifies fraudulent transactions, handles severe class imbalance, provides model interpretability, and delivers a user-friendly web interface for real-time inference.
+To build a fraud detection system that:
+- Identifies fraudulent transactions accurately  
+- Handles imbalanced datasets effectively  
+- Provides explainable predictions  
+- Visualizes model performance  
+- Deploys as an interactive web application  
+
+---
 
 ## 🛠 Technologies Used
 - Python  
@@ -12,24 +31,26 @@ To design and implement a scalable fraud detection pipeline that accurately iden
 - XGBoost  
 - Pandas, NumPy  
 - Matplotlib, Seaborn  
-- SHAP (Explainable AI)  
+- SHAP  
 - Streamlit  
-- Imbalanced-learn (SMOTE)  
-- Joblib  
 - Git & GitHub  
 
-## ✨ Key Features
-- End-to-end ML pipeline from data preprocessing to deployment  
-- High-performance classification using XGBoost  
-- Anomaly detection using Isolation Forest for outlier analysis  
-- Advanced handling of class imbalance using SMOTE  
-- Comprehensive evaluation using ROC-AUC, Precision, Recall, F1-score  
-- Visualization with Confusion Matrix and ROC Curve  
-- Model interpretability using SHAP (feature importance & impact)  
-- Interactive Streamlit dashboard for real-time predictions  
-- Modular and scalable code architecture  
+---
+
+## ✨ Features
+- Fraud detection using XGBoost  
+- Anomaly detection using Isolation Forest  
+- Handles imbalanced data using SMOTE  
+- ROC Curve and Confusion Matrix visualization  
+- SHAP-based model explainability  
+- Interactive Streamlit dashboard  
+- Real-time transaction prediction  
+- Clean and modular code structure  
+
+---
 
 ## 📂 Project Structure
+```bash
 fraud-detection-ml/
 │
 ├── data/                # Raw dataset  
@@ -47,53 +68,79 @@ fraud-detection-ml/
 │
 ├── requirements.txt  
 ├── README.md  
-└── .gitignore  
+└── .gitignore
+```
+
+---
 
 ## ▶️ How to Run the Project
-Step 1: Install dependencies  
-pip install -r requirements.txt  
 
-Step 2: Train the model  
-python3 src/train.py  
+### Step 1: Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+### Step 2: Train the Model
+```bash
+python3 src/train.py
+```
+### Step 3: Evaluate the Model
+```bash
+python3 src/evaluate.py
+```
+### Step 4: Generate Explainability
+```bash
+python3 src/explain.py
+```
+### Step 5: Run the Application
+```bash
+streamlit run app/app.py
+```
 
-Step 3: Evaluate the model  
-python3 src/evaluate.py  
+---
 
-Step 4: Generate explainability insights  
-python3 src/explain.py  
+## 🧠 Concepts Used
 
-Step 5: Launch the application  
-streamlit run app/app.py  
+### 1️⃣ Machine Learning
+Used XGBoost for classification of transactions.
 
-## 🧠 Core Concepts Implemented
-- Imbalanced Data Handling: Applied SMOTE to address skewed class distribution  
-- Supervised Learning: Trained XGBoost classifier for fraud prediction  
-- Anomaly Detection: Used Isolation Forest to detect unusual transaction patterns  
-- Model Evaluation: Used ROC-AUC, Precision, Recall, F1-score, Confusion Matrix  
-- Explainable AI: Used SHAP for interpreting feature importance and predictions  
-- Deployment: Built and deployed an interactive dashboard using Streamlit  
+### 2️⃣ Anomaly Detection
+Used Isolation Forest to detect unusual patterns.
+
+### 3️⃣ Imbalanced Data Handling
+Used SMOTE to balance fraud and non-fraud data.
+
+### 4️⃣ Model Evaluation
+Used ROC Curve, Confusion Matrix, Precision, Recall, F1-score
+
+### 5️⃣ Explainable AI
+Used SHAP to interpret model predictions.
+
+### 6️⃣ Web Application
+Built an interactive UI using Streamlit.
+
+---
 
 ## 📊 Sample Output
-Prediction Result  
-🚨 Fraud Detected (Confidence: 0.92)  
+```
+Prediction Result
 
-Model Insights:  
-- ROC Curve visualization  
-- Confusion Matrix visualization  
+🚨 Fraud Detected (Confidence: 0.92)
 
-Explainability:  
-- SHAP summary plot  
-- Feature importance analysis  
+Model Insights:
+- ROC Curve displayed
+- Confusion Matrix displayed
 
-## 📈 Results
-- Achieved high ROC-AUC score (~1.0)  
-- Strong recall for fraud detection (critical for minimizing false negatives)  
-- Effective performance on highly imbalanced dataset  
+Explainability:
+- SHAP summary plot
+- Feature importance graph
+```
+
+---
 
 ## 🎓 Learning Outcomes
-- Handling real-world imbalanced datasets  
-- Building and evaluating advanced ML models  
-- Combining supervised and unsupervised techniques  
-- Applying Explainable AI for model transparency  
-- Developing deployable ML applications  
-- Structuring scalable and modular ML pipelines  
+- Understanding imbalanced datasets in ML
+- Building classification and anomaly detection models
+- Evaluating models using advanced metrics
+- Applying Explainable AI techniques
+- Developing and deploying ML applications
+- Structuring real-world ML projects
